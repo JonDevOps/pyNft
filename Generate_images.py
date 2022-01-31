@@ -1,6 +1,7 @@
 #5
 # Trait counting
 #### Generate Images
+import os
 
 os.mkdir(f'./images')
 
@@ -24,5 +25,3 @@ for item in all_images:
     rgb_im = com5.convert('RGB')
     file_name = str(item["tokenId"]) + ".png"
     rgb_im.save("./images/" + file_name)
-
-
